@@ -1,0 +1,323 @@
+.header {
+    display: flex;
+    font-family: "Montserrat";
+    font-style: normal;
+    min-height: 664px;
+    max-height: 756px;
+    width: 1168px;
+    padding: 0;
+    margin: 8px auto;
+    position: relative;
+}
+
+.header__logo {
+    height: 65px;
+    width: 60px;
+    box-sizing: border-box;
+    border-color: #F8D24E;
+    margin-right: 269px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__menu {
+    max-width: 467px;
+    margin-top: 32px;
+    left: 345px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.header__menu_item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color: #FCFCFC;
+    padding: 0;
+    margin-right: 27px;
+}
+
+.header__menu_item_active {
+    color: #F8D24E;
+    margin-right: 27px;
+}
+
+.header__button {
+    display: flex;
+    box-sizing: border-box;
+    border: none;
+    width: 152px;
+    background: #F8D24E;
+    border-radius: 10px;
+    padding: 12.5px 34px;
+    margin-top: 12px;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.header__button-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header__button-icon {
+    background-image: url(../img/more.svg);
+    width: 12px;
+    height: 12px;
+    margin-left: 7px;
+    border: none;
+    object-fit: contain;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__background {
+    position: absolute;
+    bottom: 0;
+    height: 384px;
+    background-image: url(../img/точки.svg);
+    margin: 0;
+    background-size: 100%;
+    left: -16px;
+    right: -16px;
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__title-and-buttons {
+    position: absolute;
+    left: 0;
+    top: 110px;
+    max-width: 367px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    width: 367px;
+    padding: 0;
+    margin: 0;
+}
+
+.header__buttons {
+    display: flex;
+    max-width: 300px;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.header__btn_left {
+    box-sizing: border-box;
+    font-display: flex;
+    align-items: center;
+    max-width: 134px;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10.5px 34px;
+    margin-right: 12px;
+    background-color: inherit;
+}
+
+.header__btn_right {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #F8D24E;
+    box-sizing: border-box;
+    width: 154px;
+    border-radius: 10px;
+    border: none;
+    padding: 9px 21px 9px 22px;
+    background-color: inherit;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.header__btn_right:hover {
+    color: #0A8817;
+}
+
+.header__btn_right:focus {
+    color: #FCFCFC;
+}
+
+.header__btn_right:disabled {
+    color: #ABABAB;
+}
+
+.header__img {
+    height: 225px;
+    width: 225px;
+    left: 0;
+    bottom: 64.5px;
+    margin-top: 42px;
+    position: absolute;
+    object-fit: contain;
+    border-radius: 50%;
+    border: none;
+}
+
+.header__box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 112px;
+    position: absolute;
+    bottom: 111px;
+    left: 240px;
+}
+
+.header__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FCFCFC;
+    padding: 0;
+    margin-bottom: 14px;
+    z-index: 2;
+}
+
+.header__arrow {
+    background-image: url(../img/arrow-w.svg);
+    width: 40px;
+    height: 16px;
+    border: none;
+    object-fit: contain;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.header__arrow:hover {
+    width: 50px;
+    height: 16px;
+}
+
+.header__arrow:focus {
+    width: 50px;
+    height: 20px;
+}
+
+.header__illustration {
+    background-image: url(../img/icecream.svg);
+    position: absolute;
+    width: 447px;
+    height: 561px;
+    margin: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    right: 94px;
+    bottom: 0;
+    object-fit: contain;
+    position: absolute;
+    z-index: 5;
+}
+
+.header__illustration_blur {
+    border: 50px rgba(252, 252, 252, 0.44);
+    background-image: url(../img/shadow.svg);
+    position: absolute;
+    width: 484px;
+    height: 590px;
+    background-size: 100%;
+    right: 94px;
+    bottom: 0;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.6;
+    filter: blur(50px);
+    z-index: 4;
+}
+
+.header__right-block {
+    width: 79px;
+    height: 170px;
+    position: absolute;
+    right: 0;
+    top: 118px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.header__right-block_top {
+    width: 52px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: end;
+    margin-bottom: 16px;
+}
+
+.header__right-block_bottom {
+    width: 79px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.header__number {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.header__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #FCFCFC;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
