@@ -1,6 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 @import url(header.css);
+@import url(prod.css);
 
 .maketforfigma {
     flex: 0 0 auto;
@@ -48,13 +49,13 @@ body {
     font-family: "Montserrat", "Seymour One", "Arial", sans-serif;
     font-style: normal;
     color: #131313;
+    background-color: #84A278;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-    background-color: #84A278;
     padding: 0;
     margin: 0;
 }
@@ -106,189 +107,6 @@ a {
 
 .link_button:disabled {
     background: #ABABAB;
-}
-
-.prod {
-    min-height: 1050px;
-    width: 100vw;
-    background: #84A278;
-    position: relative;
-}
-
-.prod__background {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: absolute;
-    background-image: url(img/prod-fon.jpg);
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 1053px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.prod__header {
-    max-height: 331px;
-    display: flex;
-    flex-direction: column;
-}
-
-.prod__overtitle {
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding-bottom: 12px;
-    margin: 0 auto;
-    z-index: 2;
-}
-
-.prod__title {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0 auto;
-    z-index: 2;
-}
-
-.prod__items {
-    max-width: 1175px;
-    min-height: 719px;
-    list-style: none;
-    display: flex;
-    margin: 0 auto 57px;
-    padding: 0;
-}
-
-.prod__item {
-    max-width: 370px;
-    min-height: 718px;
-    padding: 0;
-    margin-right: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.prod__item:last-child {
-    margin-right: 0;
-}
-
-.prod__item-img {
-    max-width: 300px;
-    display: flex;
-    position: absolute;
-    padding: 0;
-    margin: 0 auto;
-    top: 0;
-}
-
-.prod__img {
-    display: block;
-    border-radius: 150px;
-    border: none;
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 5;
-}
-
-.circle {
-    position: absolute;
-    background-position: center;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 17px;
-}
-
-.prod__circle_ice {
-    background-image: url(img/Elipse-10.jpg);
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-}
-
-.prod__circle_coffee {
-    background-image: url(img/Elipse-11.jpg);
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-}
-
-.prod__circle_shake {
-    background-image: url(img/Elipse-12.jpg);
-    background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-}
-
-.prod__item-title {
-    margin: 32px auto 65px;
-    padding: 0;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    z-index: 2;
-}
-
-.prod__item-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 176%;
-    text-align: center;
-    letter-spacing: 0.04em;
-    margin: 0 auto 60px;
-    padding: 0;
-    z-index: 2;
-}
-
-.prod__item-arrow {
-    background-image: url(img/Arrow.svg);
-    width: 40px;
-    border: 2px solid #131313;
-    margin: 0 auto 60px;
-    z-index: 2;
-}
-
-.prod__rectangle {
-    position: absolute;
-    width: 100%;
-    height: 535.5px;
-    border-radius: 24px;
-    bottom: 0;
-}
-
-.prod__rectangle_ice {
-    background: #AEC6A5;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-}
-
-.prod__rectangle_coffee {
-    background: #EFD478;
-}
-
-.prod__rectangle_shake {
-    background: #D6936D;
 }
 
 .how {
