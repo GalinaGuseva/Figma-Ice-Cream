@@ -1,8 +1,12 @@
 .prod {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
     background-color: #fff;
     font-family: "Montserrat";
     font-style: normal;
     min-height: 1050px;
+    margin: 0;
 }
 
 .prod__center {
@@ -13,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 60px 12px 57px;
 }
 
 .prod__background {
@@ -35,7 +40,7 @@
     min-height: 94px;
     display: flex;
     flex-direction: column;
-    margin: 60px auto 120px;
+    margin: 0 auto 120px;
 }
 
 .prod__overtitle {
@@ -64,15 +69,14 @@
 
 .prod__items {
     max-width: 1175px;
-    min-height: 719px;
     list-style: none;
     display: flex;
-    margin: 0 auto 57px;
+    margin: 0 auto;
     padding: 0;
 }
 
 .prod__item {
-    max-width: 370px;
+    width: 370px;
     margin-right: 32px;
     display: flex;
     flex-direction: column;
@@ -136,7 +140,7 @@
 }
 
 .prod__item-title {
-    margin: 49px auto 65px;
+    margin: 38px auto 65px;
     padding: 0;
     font-weight: 700;
     font-size: 30px;
@@ -153,7 +157,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     max-width: 246.5px;
-    min-height: 207px;
+    height: 207px;
     margin: 0 auto;
 }
 
@@ -197,11 +201,11 @@
 
 .prod__rectangle {
     width: 100%;
-    height: 535.5px;
     border-radius: 24px;
     margin: 183.5px 0 0;
     z-index: 5;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    padding-bottom: 60px;
 }
 
 .prod__rectangle_ice {
@@ -218,22 +222,22 @@
 
 @media screen and (max-width: 1024px) {
     .prod {
-        height: 852px;
+        min-height: 852px;
     }
 
     .prod__center {
-        max-width: 768px;
+        max-width: 760px;
+        padding: 60px 32px 82px;
     }
 
     .prod__background {
-        height: 852px;
-        opacity: 1;
+        background-image: url(../img/ice-fon-plansh.svg);
     }
 
     .prod__header {
         max-width: 306px;
         min-height: 82px;
-        margin: 60px auto 80px;
+        margin: 0 auto 80px;
     }
 
     .prod__overtitle {
@@ -249,11 +253,11 @@
     .prod__items {
         max-width: 704px;
         height: 548px;
-        margin: 0 auto 82px;
+        margin: 0 auto;
     }
 
     .prod__item {
-        max-width: 224px;
+        width: 224px;
         height: 548px;
         margin-right: 16px;
     }
@@ -288,13 +292,13 @@
     .prod__item-title {
         font-size: 22px;
         line-height: 27px;
-        margin: 20px auto 40px;
+        margin: 30px auto 40px;
     }
 
     .prod__item-text {
         font-size: 14px;
         line-height: 176%;
-        height: 234.4px;
+        height: 222px;
         max-width: 171px;
     }
 
@@ -303,29 +307,35 @@
         height: 428px;
         border-radius: 16px;
         margin: 120px 0 0;
+        padding-bottom: 20px;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
     .prod {
-        height: 568px;
+        min-height: 1924px;
     }
 
     .prod__center {
-        max-width: 320px;
+        max-width: 300px;
+        padding: 60px 10px 0;
+        justify-content: flex-start;
+        margin: 0;
     }
 
     .prod__background {
         background-image: url(../img/ice-fon-mob.svg);
-        height: 568px;
-        opacity: 0.3;
+        background-repeat: no-repeat repeat;
+        background-size: 300px 560px;
+        object-fit: cover;
+        margin: 0;
     }
 
     .prod__header {
         max-width: 270px;
         min-height: 72px;
-        margin: 60px auto 40px;
+        margin: 0 auto 40px;
     }
 
     .prod__overtitle {
@@ -340,14 +350,15 @@
 
     .prod__items {
         max-width: 280px;
-        min-height: 1864px;
+        min-height: 1664px;
         margin: 0 auto;
         flex-direction: column;
     }
 
     .prod__item {
         max-width: 280px;
-        margin-bottom: 56px;
+        margin: 0 auto 56px;
+        min-height: 528px;
     }
 
     .prod__item-img {
@@ -359,30 +370,31 @@
     .prod__item-title {
         font-size: 20px;
         line-height: 24px;
-        margin: 20px auto 40px;
+        margin: 31px auto 40px;
     }
 
     .prod__item-text {
         font-size: 14px;
         line-height: 176%;
         max-width: 200px;
-        min-height: 114px;
-        padding: 0 40px;
+        height: 202px;
+        margin: 0 auto;
     }
 
     .prod__arrow-black {
-        margin: 0 auto 10px;
-        padding: 0;
+        margin: 10px auto;
     }
 
     .prod__item-arrow {
-        margin: 0 auto 10px;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 
     .prod__rectangle {
-        width: 100%;
-        min-height: 420px;
+        width: 280px;
+        height: 420px;
         border-radius: 24px;
+        padding-bottom: 10px;
         margin: 108px 0 0;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     }

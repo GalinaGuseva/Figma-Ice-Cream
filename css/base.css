@@ -1,7 +1,8 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
-@import url(header.css);
+@import url(Header.css);
 @import url(prod.css);
+@import url(How.css);
 
 .maketforfigma {
     flex: 0 0 auto;
@@ -107,141 +108,6 @@ a {
 
 .link_button:disabled {
     background: #ABABAB;
-}
-
-.how {
-    min-height: 1228px;
-    width: 100vw;
-    background: #84A178;
-}
-
-.how__center {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.how__header {
-    max-width: 481px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 60px auto 82px;
-}
-
-.how__overtitle {
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #FCFCFC;
-    padding: 0;
-    margin: 0 auto 12px;
-}
-
-.how__title {
-    font-family: 'Seymour One';
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FCFCFC;
-    padding: 0;
-}
-
-.how__container {
-    display: flex;
-    width: 100%;
-}
-
-.how__image {
-    width: 500px;
-    min-height: 500px;
-    position: relative;
-    display: flex;
-    padding: 0;
-}
-
-.how__img {
-    display: block;
-    border-radius: 150px;
-    border: none;
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
-    border-radius: 250px;
-    border: none;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 39px;
-    z-index: 5;
-}
-
-.how__circle {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    border-radius: 250px;
-    top: 0;
-}
-
-.how__advantages {
-    list-style: none;
-    padding: 0;
-    margin: 60px auto 180px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-}
-
-.how__item {
-    max-width: 368px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.how__icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-}
-
-.how__number {
-    margin: 40px auto 16px;
-    padding: 0;
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 71px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FCFCFC;
-}
-
-.how__pref {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 176%;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #FCFCFC;
-    padding: 0;
-    margin: 0 auto;
 }
 
 .callback {
