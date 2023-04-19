@@ -3,6 +3,7 @@
 @import url(Header.css);
 @import url(prod.css);
 @import url(How.css);
+@import url(callback.css);
 
 .maketforfigma {
     flex: 0 0 auto;
@@ -108,111 +109,4 @@ a {
 
 .link_button:disabled {
     background: #ABABAB;
-}
-
-.callback {
-    min-height: 1020px;
-    width: 100vw;
-    background: #84A278;
-    position: relative;
-}
-
-.callback__background {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: absolute;
-    background-image: url(img/callback-fon.svg);
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 1053px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    top: -86px;
-}
-
-.callback__image {
-    position: absolute;
-    display: block;
-    width: 1013px;
-    height: 422px;
-    border-radius: 24px;
-    border: none;
-    margin: 0 auto;
-    padding: 0;
-    object-fit: contain;
-    top: -98px;
-    z-index: 5;
-}
-
-.callback__photo {
-    position: absolute;
-    display: block;
-    width: 85px;
-    height: 85px;
-    border-radius: 44px;
-    border: none;
-    margin: 128px auto 32px;
-    padding: 0;
-    object-fit: contain;
-    z-index: 5;
-}
-
-.callback__rectangle {
-    width: 968px;
-    background: #84A178;
-    border-radius: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 32px;
-}
-
-.callback__text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FCFCFC;
-    padding: 39px 109px 37px;
-}
-
-.callback__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    text-align: center;
-    color: #131313;
-    padding: 0;
-}
-
-.callback__dotes {
-    margin: 32px auto 207px;
-    display: flex;
-    max-width: 72px;
-    min-height: 12px;
-}
-
-.callback__dot {
-    background-image: url(img/Ellipse7.svg);
-    background: #D9D9D9;
-    width: 12px;
-    height: 12px;
-}
-
-.callback__dot_active {
-    background-image: url(img/Ellipse8.svg);
-    margin-right: 18px;
-    background: #84A178;
-    width: 12px;
-    height: 12px;
-}
-
-.callback__dot :last-child {
-    margin: 0;
 }

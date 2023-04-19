@@ -265,12 +265,13 @@
 
 @media screen and (max-width: 767px) {
     .how {
-        height: 1364px;
+        min-height: 1564px;
     }
 
     .how__center {
         max-width: 320px;
         padding: 60px 20px 0;
+        height: 100%;
     }
 
     .how__header {
