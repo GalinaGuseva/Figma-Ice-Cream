@@ -4,6 +4,8 @@
 @import url(prod.css);
 @import url(How.css);
 @import url(callback.css);
+@import url(contacts.css);
+@import url(footer.css);
 
 .maketforfigma {
     flex: 0 0 auto;

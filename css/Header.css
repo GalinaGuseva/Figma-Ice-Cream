@@ -275,32 +275,45 @@
     height: 20px;
 }
 
-.header__illustration {
-    background-image: url(../img/icecream.svg);
+.header__container {
     position: absolute;
+    box-sizing: border-box;
+    border: none;
     width: 447px;
     height: 561px;
     margin: 0;
+    padding: 0;
+    right: 94px;
+    bottom: 0;
+    z-index: 5;
+}
+
+.header__illustration {
+    background-image: url(../img/icecream-main.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-    right: 94px;
-    bottom: -12px;
-    object-fit: contain;
     position: absolute;
+    box-sizing: border-box;
+    border: none;
+    width: 447px;
+    height: 561px;
+    margin: 0;
+    padding: 0;
+    right: 94px;
+    bottom: 0;
     z-index: 5;
+    object-fit: contain;
 }
 
 .header__illustration_blur {
     border: 50px rgba(252, 252, 252, 0.44);
     background-image: url(../img/shadow.svg);
     position: absolute;
+    bottom: 0;
     width: 484px;
     height: 590px;
     background-size: 100%;
     right: 94px;
-    bottom: -12px;
     object-fit: contain;
     padding: 0;
     margin: 0;
@@ -308,7 +321,7 @@
     position: absolute;
     opacity: 0.6;
     filter: blur(50px);
-    z-index: 4;
+    z-index: 3;
 }
 
 .header__right-block {
@@ -496,6 +509,8 @@
         height: 325px;
         right: 93px;
         bottom: 0;
+        object-fit: contain;
+        margin-bottom: -3px;
     }
 
     .header__illustration_blur {
@@ -503,6 +518,8 @@
         height: 342px;
         right: 79.2px;
         bottom: 0;
+        object-fit: fill;
+        margin-bottom: -3px;
     }
 
     .header__right-block {
@@ -597,12 +614,14 @@
         width: 157px;
         height: 207px;
         right: 81px;
+        margin-bottom: -10px;
     }
 
     .header__illustration_blur {
         width: 170px;
         height: 219px;
         right: 68px;
+        margin-bottom: -10px;
     }
 
     .header__right-block {
