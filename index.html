@@ -29,26 +29,30 @@
     <!-- Конец -->
 
     <div class="main">
-        <header class="header">
-            <img src="img/logo1.svg" class="header__logo">
-            <nav class="header__menu">
-                <a href="#main" class="header__menu_item link">
-                    Home</a>
-                <a href="#how-it" class="header__menu_item link">
-                    How&nbsp;it’s&nbsp;made?
-                </a>
-                <a href="#products" class="header__menu_item link">
-                    Our&nbsp;products
-                </a>
-                <a href="#contacts" class="header__menu_item link">
-                    Contact
-                </a>
-            </nav>
-            <button type="button" class="header__menu_mobile"></button>
-            <button type="button" class="header__button link_button">
-                <p class="header__button-name">Buy now</p>
-                <span class="header__button-icon"></span>
-            </button>
+        <header class="header" id="main">
+            <div class="header__top">
+                <img src="img/logo1.svg" class="header__logo">
+                <div class="header__menu-and-button">
+                    <button type="button" class="header__menu-burger"></button>
+                    <nav class="header__menu">
+                        <a href="#main" class="header__menu_item link">
+                            Home</a>
+                        <a href="#how-it" class="header__menu_item link">
+                            How&nbsp;it’s&nbsp;made?
+                        </a>
+                        <a href="#products" class="header__menu_item link">
+                            Our&nbsp;products
+                        </a>
+                        <a href="#contacts" class="header__menu_item link">
+                            Contact
+                        </a>
+                    </nav>
+                    <button type="button" class="header__button link_button">
+                        <p class="header__button-name">Buy now</p>
+                        <span class="header__button-more">></span>
+                    </button>
+                </div>
+            </div>
             <div class="header__background_left"></div>
             <div class="header__background_middle"></div>
             <div class="header__background_right"></div>
@@ -98,10 +102,13 @@
                                     <div class="prod__circle_ice prod__circle"></div>
                                 </div>
                                 <h4 class="prod__item-title">ice cream</h4>
-                                <p class="prod__item-text">Soft ice cream with a delicate taste. Made with milk, cream,
-                                    sugar and natural stabilizer</p>
-                                <div class="prod__item-arrow"></div>
-                            </div>
+                                <div class="prod__item-block">
+                                    <p class="prod__item-text">Soft ice cream with a delicate taste. Made with milk,
+                                        cream,
+                                        sugar and natural stabilizer</p>
+                                    <a href="#" class="prod__arrow-black"><img src="img/arrow-black.svg" alt="arrow"
+                                            class="prod__arrow" /></a>
+                                </div>
                         </li>
                         <li class="prod__item">
                             <div class="prod__rectangle prod__rectangle_coffee">
@@ -110,11 +117,13 @@
                                     <div class="prod__circle_coffee prod__circle"></div>
                                 </div>
                                 <h4 class="prod__item-title">ice coffee</h4>
-                                <p class="prod__item-text">Fragrant invigorating drink created from 100% natural
-                                    ingredients
-                                    without the use of preservatives and flavor enhancers</p>
-                                <a href="#" class="prod__arrow-black"><img src="img/arrow-black.svg" alt="arrow"
-                                        class="prod__arrow" /></a>
+                                <div class="prod__item-block">
+                                    <p class="prod__item-text">Fragrant invigorating drink created from 100% natural
+                                        ingredients
+                                        without the use of preservatives and flavor enhancers</p>
+                                    <a href="#" class="prod__arrow-black"><img src="img/arrow-black.svg" alt="arrow"
+                                            class="prod__arrow" /></a>
+                                </div>
                             </div>
                         </li>
                         <li class="prod__item">
@@ -124,9 +133,12 @@
                                     <div class="prod__circle_shake prod__circle"></div>
                                 </div>
                                 <h4 class="prod__item-title">milkshakes</h4>
-                                <p class="prod__item-text">Sweet drinks based on milk and ice cream, supplemented with
-                                    syrups, fruits, berries and other sweets of your choice</p>
-                                <div class="prod__item-arrow"></div>
+                                <div class="prod__item-block">
+                                    <p class="prod__item-text">Sweet drinks based on milk and ice cream, supplemented
+                                        with syrups, fruits, berries and other sweets of your choice</p>
+                                    <a href="#" class="prod__arrow-black"><img src="img/arrow-black.svg" alt="arrow"
+                                            class="prod__arrow" /></a>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -138,7 +150,7 @@
             <div class="how__center">
                 <div class="how__header">
                     <h4 class="how__overtitle">tradition&nbsp;and&nbsp;love</h4>
-                    <h3 class="how__title">how it’s made?</h3>
+                    <h3 class="how__title">how it’s&nbsp;made?</h3>
                 </div>
                 <div class="how__container">
                     <div class="how__image">
@@ -160,7 +172,7 @@
                         </div>
                         <button type="button" class="how__button link_button">
                             <p class="how__button-name">Read&nbsp;more</p>
-                            <span class="how__button-icon"></span>
+                            <span class="how__button-more">></span>
                         </button>
                     </div>
                 </div>
@@ -243,9 +255,14 @@
                 </li>
             </ul>
             <div class="contacts__buttons">
-                <button type="button" class="contacts__left-btn link_button">Our Locations<span class="contacts__more">
-                        ></span></button>
-                <button type="button" class="contacts__right-btn button">Franchise ></button>
+                <button type="button" class="contacts__left-btn link_button">
+                    <p class="contacts__btn-name">Our Locations</p>
+                    <span class="contacts__btn-more">></span>
+                </button>
+                <button type="button" class="contacts__right-btn button">
+                    <p class="contacts__btn-name">Franchise</p>
+                    <span class="contacts__btn-more">></span>
+                </button>
             </div>
         </section>
         <section class="footer">

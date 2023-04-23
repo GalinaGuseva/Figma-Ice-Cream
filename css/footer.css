@@ -1,8 +1,7 @@
 .footer {
-    font-family: "Montserrat";
-    font-style: normal;
     color: #FCFCFC;
     max-width: 1168px;
+    padding: 0 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -14,7 +13,7 @@
     padding-bottom: 54px;
     border-bottom: 1px solid #E1E1E1;
     margin: 0 auto 12px;
-    width: 100%;
+    width: 1168px;
     justify-content: space-between;
 }
 
@@ -94,6 +93,8 @@
 }
 
 .footer__bottom {
+    display: flex;
+    text-align: center;
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
@@ -111,6 +112,7 @@
     }
 
     .footer__wrap {
+        width: 702px;
         padding-bottom: 32px;
         margin: 0 auto 14px;
     }
@@ -160,6 +162,7 @@
     }
 
     .footer__wrap {
+        width: 280px;
         flex-direction: column;
         align-self: center;
         justify-content: flex-start;

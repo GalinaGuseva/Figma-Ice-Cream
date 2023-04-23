@@ -1,36 +1,43 @@
 .header {
     display: flex;
-    font-family: "Montserrat";
-    font-style: normal;
-    min-height: 664px;
-    max-height: 756px;
-    width: 1168px;
-    padding: 0;
-    margin: 8px auto 0;
     position: relative;
+    width: 1168px;
+    min-height: 664px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    right: 0px;
+    height: 65px;
 }
 
 .header__logo {
     height: 65px;
     width: 60px;
     box-sizing: border-box;
+    object-fit: contain;
     border-color: #F8D24E;
-    margin-right: 269px;
-    left: 0;
-    top: 0;
-    position: absolute;
-    z-index: 1;
+    margin: 0;
+}
+
+.header__menu-and-button {
+    display: flex;
+    width: 855px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__menu {
-    max-width: 467px;
-    margin-top: 32px;
-    left: 345px;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: absolute;
+    width: 442px;
 }
 
 .header__menu_item {
@@ -43,7 +50,11 @@
     margin-right: 27px;
 }
 
-.header__menu_mobile {
+.header__menu-burger {
+    display: none;
+}
+
+.header__menu_active {
     display: none;
 }
 
@@ -55,10 +66,8 @@
     background: #F8D24E;
     border-radius: 10px;
     padding: 12.5px 34px;
-    margin-top: 12px;
+    margin: 0;
     align-items: center;
-    position: absolute;
-    right: 0;
 }
 
 .header__button-name {
@@ -71,16 +80,30 @@
     margin: 0;
 }
 
+.header__button-more {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 3px 0 0 7px;
+}
+
 .header__button-icon {
     background-image: url(../img/more.svg);
     width: 12px;
     height: 12px;
     margin-left: 7px;
-    border: none;
     object-fit: contain;
     background-size: 100%;
+    background-repeat: no-repeat;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.header__button-icon:focus {
+    background-image: url(../img/more-icon.svg);
 }
 
 .header__background_left {
@@ -128,8 +151,8 @@
 .header__title-and-buttons {
     position: absolute;
     left: 0;
-    top: 110px;
-    max-width: 367px;
+    top: 118px;
+    width: 367px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -289,7 +312,7 @@
 }
 
 .header__illustration {
-    background-image: url(../img/icecream-main.svg);
+    background-image: url(../img/icecream-header.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -297,7 +320,7 @@
     border: none;
     width: 447px;
     height: 561px;
-    margin: 0;
+    margin-bottom: -12px;
     padding: 0;
     right: 94px;
     bottom: 0;
@@ -316,10 +339,10 @@
     right: 94px;
     object-fit: contain;
     padding: 0;
-    margin: 0;
+    margin-bottom: -12px;
     background-repeat: no-repeat;
     position: absolute;
-    opacity: 0.6;
+    opacity: 0.8;
     filter: blur(50px);
     z-index: 3;
 }
@@ -379,30 +402,30 @@
 @media screen and (max-width: 1023px) {
     .header {
         min-height: 415px;
-        max-height: 515px;
-        width: 768px;
-        padding: 0;
-        margin: 20px auto 0;
+        width: 704px;
+    }
+
+    .header__top {
+        top: 20px;
+        height: 48px;
     }
 
     .header__logo {
-        height: 44px;
-        width: 48px;
-        margin: 0;
+        height: 48px;
+        width: 44px;
+        object-fit: fill;
+        z-index: 30;
     }
 
-    .header__button {
-        margin-top: 4px;
+    .header__menu-and-button {
+        width: 216px;
     }
 
-    .header__menu_mobile {
+    .header__menu-burger {
         display: flex;
         border: none;
         width: 32px;
         height: 32px;
-        margin: 19px 21px 0 0;
-        right: 202px;
-        position: absolute;
         background-image: url(../img/Burger.svg);
         background-color: inherit;
         background-size: 100%;
@@ -420,18 +443,41 @@
         display: none;
     }
 
+    .header__menu-mobile {}
+
+    .header__menu-mobile_active {
+        display: none;
+    }
+
+    .header__menu_active {
+        display: none;
+    }
+
+    .header__menu_item_active {
+        display: none;
+    }
+
+    .header__menu-container_visible {}
+
+    .header__menu-container_visible {}
+
+    .header__menu-container_hidden {}
+
+    .header__menu-btn-close {}
+
+
     .header__background_left {
-        height: 34px;
-        width: 110px;
+        height: 32px;
+        width: 107px;
         left: -32px;
-        bottom: 1.75px;
+        bottom: 3px;
     }
 
     .header__background_right {
-        height: 34px;
-        width: 182px;
+        height: 67px;
+        width: 183px;
         right: -32px;
-        bottom: 0.4px;
+        bottom: 2px;
     }
 
     .header__background_middle {
@@ -439,22 +485,18 @@
     }
 
     .header__title-and-buttons {
-        top: 84px;
-        max-width: 181px;
+        top: 104px;
+        width: 183px;
     }
 
     .header__title_top {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 23px;
-        padding: 0;
-        margin: 0;
     }
 
     .header__title_bottom {
-        font-size: 28px;
-        line-height: 23px;
-        margin: -2px;
-        padding: 0;
+        font-size: 24px;
+        line-height: 28px;
     }
 
     .header__buttons {
@@ -477,9 +519,9 @@
     .header__btn_right {
         width: 83px;
         height: 24px;
-        width: 82.8px;
         font-size: 8px;
         line-height: 10px;
+        padding: 5px 10px 7px;
     }
 
     .header__img {
@@ -492,7 +534,7 @@
 
     .header__box {
         width: 151px;
-        height: 105px;
+        height: 121px;
         bottom: 32px;
         left: 185px;
     }
@@ -505,27 +547,24 @@
     }
 
     .header__illustration {
-        width: 257px;
-        height: 325px;
-        right: 93px;
-        bottom: 0;
-        object-fit: contain;
-        margin-bottom: -3px;
+        width: 266px;
+        height: 342px;
+        right: 56px;
+        margin-bottom: -14px;
     }
 
     .header__illustration_blur {
-        width: 266px;
-        height: 342px;
-        right: 79.2px;
-        bottom: 0;
+        width: 286px;
+        height: 362px;
+        right: 50px;
         object-fit: fill;
-        margin-bottom: -3px;
+        margin-bottom: -14px;
     }
 
     .header__right-block {
         width: 46px;
         height: 116px;
-        top: 70px;
+        top: 94px;
     }
 
     .header__right-block_top {
@@ -551,30 +590,28 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .header {
         min-height: 490px;
-        max-height: 502px;
         width: 280px;
-        padding: 0;
-        margin: 12px auto 0;
+    }
+
+    .header__top {
+        top: 12px;
+        height: 37px;
     }
 
     .header__logo {
-        height: 40.5px;
-        width: 37px;
+        height: 37px;
+        width: 40.5px;
+    }
+
+    .header__menu-and-button {
+        width: 32px;
     }
 
     .header__button {
         display: none;
-    }
-
-    .header__menu_mobile {
-        width: 20px;
-        height: 12px;
-        margin: 8px 6px 0 0;
-        right: 6px;
-        top: 8px;
     }
 
     .header__background_left {
@@ -594,8 +631,18 @@
     }
 
     .header__title-and-buttons {
-        top: 98px;
-        max-width: 247px;
+        top: 110px;
+        width: 247px;
+    }
+
+    .header__title_top {
+        font-size: 26px;
+        line-height: 33px;
+    }
+
+    .header__title_bottom {
+        font-size: 34px;
+        line-height: 34px;
     }
 
     .header__buttons {
@@ -611,16 +658,16 @@
     }
 
     .header__illustration {
-        width: 157px;
-        height: 207px;
-        right: 81px;
+        width: 170px;
+        height: 219px;
+        left: 65px;
         margin-bottom: -10px;
     }
 
     .header__illustration_blur {
-        width: 170px;
-        height: 219px;
-        right: 68px;
+        width: 180px;
+        height: 229px;
+        left: 55px;
         margin-bottom: -10px;
     }
 

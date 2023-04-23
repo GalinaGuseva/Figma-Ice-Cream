@@ -1,6 +1,4 @@
 .how {
-    font-family: "Montserrat";
-    font-style: normal;
     color: #FCFCFC;
     min-height: 1050px;
     margin: 0;
@@ -50,7 +48,8 @@
 
 .how__container {
     display: flex;
-    width: 100%;
+    max-width: 1168px;
+    margin: 0 auto;
 }
 
 .how__image {
@@ -126,6 +125,16 @@
     text-align: center;
     padding: 0;
     margin: 0;
+}
+
+.how__button-more {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 3px 0 0 7px;
 }
 
 .how__button-icon {
@@ -364,5 +373,4 @@
         font-size: 12px;
         line-height: 170%;
     }
-
 }

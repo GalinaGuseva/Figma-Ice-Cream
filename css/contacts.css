@@ -1,8 +1,5 @@
 .contacts {
-    font-family: "Montserrat";
-    font-style: normal;
-    color: #131313;
-    max-width: 1168px;
+    width: 1168px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,14 +10,14 @@
 }
 
 .contacts__places {
-    display: flex;
     list-style: none;
     width: 1168px;
     height: 538px;
+    display: block;
     box-sizing: border-box;
     border-radius: 24px;
     position: relative;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -56,16 +53,15 @@
     border-radius: 24px;
     display: flex;
     flex-direction: column;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
 }
 
 .contacts__title {
     box-sizing: border-box;
     height: 28px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    text-align: center;
-    letter-spacing: 0.04em;
     margin: 0 auto 32px 0;
     background: #F8D24E;
     border-radius: 6px;
@@ -74,19 +70,11 @@
 }
 
 .contacts__city {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    letter-spacing: 0.04em;
     padding: 0;
     margin: 0 0 8px;
 }
 
 .contacts__address {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 163%;
-    letter-spacing: 0.04em;
     color: #D6936D;
     padding: 0 0 32px;
     border-bottom: 1px solid #E1E1E1;
@@ -94,18 +82,11 @@
 }
 
 .contacts__days {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    letter-spacing: 0.04em;
     margin: 0;
     padding: 0;
 }
 
 .contacts__hours {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 156%;
     color: #ABABAB;
     padding: 0;
     margin: 0 0 12px;
@@ -118,9 +99,6 @@
 }
 
 .contacts__phone {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 153%;
     padding: 0;
     margin: 0;
 }
@@ -138,41 +116,45 @@
     height: 42px;
     background: #F8D24E;
     border-radius: 10px;
+    box-sizing: border-box;
     border: none;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    color: #000000;
-    padding: 0;
-}
-
-.contacts__more {
-    padding-left: 7px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #000000;
 }
 
 .contacts__right-btn {
-    box-sizing: border-box;
-    font-display: flex;
-    align-items: center;
     width: 196px;
     height: 42px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
     border: 2px solid #F8D24E;
     border-radius: 10px;
+    padding: 4px;
+    color: #000000;
+}
+
+.contacts__btn-name {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    background-color: inherit;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts__btn-more {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 0 7px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -200,34 +182,17 @@
 
     .contacts__container {
         width: 224px;
+        font-size: 14px;
         padding: 40px 24px;
     }
 
     .contacts__city {
-        font-size: 14px;
         margin: 0 0 12px;
-    }
-
-    .contacts__address {
-        font-size: 14px;
-    }
-
-    .contacts__days {
-        font-size: 14px;
-    }
-
-    .contacts__hours {
-        font-size: 14px;
     }
 
     .contacts__hours:last-of-type {
-        font-size: 14px;
         margin: 0 0 12px;
         padding: 0 0 32px;
-    }
-
-    .contacts__phone {
-        font-size: 14px;
     }
 
     .contacts__buttons {
@@ -279,43 +244,29 @@
         width: 280px;
         height: 412px;
         padding: 40px 32px;
+        font-size: 12px;
+        line-height: 16px;
     }
 
     .contacts__title {
         height: 16px;
-        font-size: 12px;
-        line-height: 16px;
         margin: 0 auto 20px 0;
         border-radius: 4px;
         padding: 0 20px;
     }
 
-    .contacts__city {
-        font-size: 12px;
-    }
-
     .contacts__address {
-        font-size: 12px;
         padding: 0 0 24px;
         margin: 0 0 24px;
     }
 
-    .contacts__days {
-        font-size: 12px;
-    }
-
     .contacts__hours {
-        font-size: 12px;
         margin: 0 0 8px;
     }
 
     .contacts__hours_bottom {
         padding: 0 0 24px;
         margin: 0 0 24px;
-    }
-
-    .contacts__phone {
-        font-size: 12px;
     }
 
     .contacts__buttons {

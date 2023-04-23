@@ -1,14 +1,13 @@
 .prod {
+    background: #fff;
     display: flex;
-    flex: 1 1 auto;
-    background-color: #fff;
-    font-family: "Montserrat";
-    font-style: normal;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .prod__wrap {
     display: flex;
-    min-height: 1050px;
+    width: 1200px;
     position: relative;
     margin: 0 auto;
 }
@@ -32,13 +31,12 @@
 }
 
 .prod__center {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 60px 12px 57px;
+    margin: 0 auto;
 }
 
 .prod__header {
@@ -156,6 +154,14 @@
     text-transform: uppercase;
 }
 
+.prod__item-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 207px;
+}
+
 .prod__item-text {
     font-weight: 400;
     font-size: 16px;
@@ -168,39 +174,18 @@
 }
 
 .prod__arrow {
-    width: 40px;
-    height: 12px;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 
 .prod__arrow-black {
     display: block;
     margin: 0 auto;
-}
-
-.prod__arrow:hover {
-    width: 50px;
-    height: 16px;
-}
-
-.prod__item-arrow {
-    background-image: url(../img/arrow-black.svg);
     width: 40px;
-    height: 12px;
-    background-position: center;
-    object-fit: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-}
-
-.prod__item-arrow:hover {
-    width: 50px;
     height: 16px;
 }
 
-.prod__item-arrow:focus {
+.prod__arrow-black:hover {
     width: 50px;
     height: 20px;
 }
@@ -226,9 +211,10 @@
     background: #D6936D;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .prod__wrap {
         min-height: 852px;
+        width: 768px;
     }
 
     .prod__center {
@@ -301,6 +287,10 @@
         margin: 30px auto 40px;
     }
 
+    .prod__item-block {
+        height: 234.4px;
+    }
+
     .prod__item-text {
         font-size: 14px;
         line-height: 176%;
@@ -321,13 +311,14 @@
 @media screen and (max-width: 767px) {
     .prod__wrap {
         min-height: 1924px;
+        width: 320px;
     }
 
     .prod__center {
         max-width: 300px;
         padding: 60px 10px 0;
         justify-content: flex-start;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .prod__background {
@@ -379,21 +370,15 @@
         margin: 31px auto 40px;
     }
 
+    .prod__item-block {
+        height: 222px;
+    }
+
     .prod__item-text {
         font-size: 14px;
         line-height: 176%;
         max-width: 200px;
-        height: 202px;
         margin: 0 auto;
-    }
-
-    .prod__arrow-black {
-        margin: 10px auto;
-    }
-
-    .prod__item-arrow {
-        margin: 0 auto;
-        margin-bottom: 10px;
     }
 
     .prod__rectangle {
