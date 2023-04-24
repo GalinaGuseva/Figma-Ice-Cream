@@ -285,22 +285,27 @@
     z-index: 2;
 }
 
+.header__white-arrow {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .header__arrow {
-    background-image: url(../img/arrow-w.svg);
+    display: flex;
+    background: inherit;
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
     width: 40px;
     height: 16px;
-    border: none;
-    object-fit: contain;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     transition: 0.2s ease-in;
     cursor: pointer;
 }
 
 .header__arrow:hover {
     width: 50px;
-    height: 16px;
+    height: 20px;
 }
 
 .header__arrow:focus {
@@ -424,7 +429,12 @@
         height: 48px;
         width: 44px;
         object-fit: fill;
-        z-index: 30;
+    }
+
+    .header__logo_menu {
+        position: absolute;
+        top: 20px;
+        left: 32px;
     }
 
     .header__menu-and-button {
@@ -450,24 +460,6 @@
     }
 
     .header__menu-mobile {
-        display: none;
-        opacity: 0;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        visibility: hidden;
-        transition: all 0.2s ease-in-out;
-        z-index: 2;
-    }
-
-    .header__menu_active {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .header__menu-container {
         display: flex;
         box-sizing: border-box;
         flex-direction: column;
@@ -478,16 +470,13 @@
         width: 100%;
         height: 100vh;
         background: #84A278;
+        color: #FCFCFC;
         margin: 0;
-        transition: transform 0.2s ease-in-out;
+        z-index: 10;
     }
 
-    .header__menu-container_visible {
-        transform: translateX(0);
-    }
-
-    .header__menu-container_hidden {
-        transform: translateX(100%);
+    .header__menu-mobile_hidden {
+        display: none;
     }
 
     .header__menu-bar {
@@ -496,6 +485,7 @@
         justify-content: center;
         width: 100%;
         position: relative;
+        z-index: 10;
     }
 
     .header__menu-btn-close {
@@ -503,14 +493,16 @@
         position: absolute;
         top: 32px;
         right: 32px;
-        background-image: url(../images/close.svg);
         width: 32px;
         height: 32px;
         border: none;
-        padding: 0;
-        background-position: center;
-        background-color: inherit;
-        flex-shrink: 1;
+        background: #84A278;
+    }
+
+    .header__close {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .header__menu-wrap {
@@ -526,8 +518,16 @@
         color: #FCFCFC;
     }
 
-    .header__menu_item {
+    .header__menu_item_mob {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
         margin-bottom: 40px;
+        color: #FCFCFC;
+    }
+
+    .header__menu_item_mob:hover {
+        color: #131313;
     }
 
     .header__background_left {
@@ -670,6 +670,12 @@
         width: 40.5px;
     }
 
+    .header__logo_menu {
+        position: absolute;
+        top: 12px;
+        left: 31px;
+    }
+
     .header__menu-and-button {
         width: 32px;
     }
@@ -678,22 +684,57 @@
         display: none;
     }
 
-    .header__menu-mobile {
-        display: none;
-    }
-
     .header__button {
         display: none;
     }
 
-    .header__menu-wrap {
-        max-width: 275px;
-        margin: 100px auto 79px;
-        font-size: 32px;
-        line-height: 39px;
+    .header__menu-mobile {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #84A278;
+        color: #FCFCFC;
+        margin: 0;
+        z-index: 10;
     }
 
-    .header__menu_item {
+    .header__menu-mobile_hidden {
+        display: none;
+    }
+
+
+    .header__menu-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: 100px;
+        bottom: 63px;
+        left: 22px;
+        width: 275px;
+        z-index: 10;
+    }
+
+    .header__menu-btn-close {
+        top: 16px;
+        right: 20px;
+    }
+
+    .header__menu-wrap {
+        max-width: 275px;
+        margin: 100px auto 61px;
+    }
+
+    .header__menu_item_mob {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
         margin-bottom: 32px;
     }
 

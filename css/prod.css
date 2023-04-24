@@ -175,13 +175,22 @@
 .prod__arrow {
     width: 100%;
     height: 100%;
+
 }
 
 .prod__arrow-black {
-    display: block;
+    display: flex;
+    background: inherit;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    object-fit: contain;
     margin: 0 auto;
+    padding: 0;
     width: 40px;
     height: 16px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
 }
 
 .prod__arrow-black:hover {

@@ -48,30 +48,6 @@
                             </a>
                         </nav>
                         <button type="button" class="header__menu-burger"></button>
-                        <div class="header__menu-mobile">
-                            <div class="header__menu-container_visible">
-                                <div class="header__menu-bar">
-                                    <button type="button" class="header__menu-btn-close"></button>
-                                    <nav class="header__menu-wrap">
-                                        <a href="#main" class="header__menu_item link">
-                                            Home</a>
-                                        <a href="#how-it" class="header__menu_item link">
-                                            How&nbsp;it’s&nbsp;made?
-                                        </a>
-                                        <a href="#products" class="header__menu_item link">
-                                            Our&nbsp;products
-                                        </a>
-                                        <a href="#contacts" class="header__menu_item link">
-                                            Contact
-                                        </a>
-                                    </nav>
-                                    <button type="button" class="header__button button_mobile link_button">
-                                        <p class="header__button-name">Buy now</p>
-                                        <span class="header__button-more">></span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
                         <button type="button" class="header__button link_button">
                             <p class="header__button-name">Buy now</p>
                             <span class="header__button-more">></span>
@@ -95,7 +71,8 @@
                 <div class="header__box">
                     <div class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et</div>
-                    <a href="#" class="header__arrow"></a>
+                    <button type="button" class="header__arrow"><img src="./img/arrow-w.svg" alt="white-arrow"
+                            class="header__white-arrow" /></button>
                 </div>
                 <div class="header__illustration"></div>
                 <div class="header__illustration_blur"></div>
@@ -132,8 +109,8 @@
                                     <p class="prod__item-text">Soft ice cream with a delicate taste. Made with milk,
                                         cream,
                                         sugar and natural stabilizer</p>
-                                    <a href="#" class="prod__arrow-black"><img src="./img/arrow-black.svg" alt="arrow"
-                                            class="prod__arrow" /></a>
+                                    <button type="button" class="prod__arrow-black"><img src="./img/arrow-black.svg"
+                                            alt="arrow" class="prod__arrow" /></button>
                                 </div>
                         </li>
                         <li class="prod__item">
@@ -147,8 +124,8 @@
                                     <p class="prod__item-text">Fragrant invigorating drink created from 100% natural
                                         ingredients
                                         without the use of preservatives and flavor enhancers</p>
-                                    <a href="#" class="prod__arrow-black"><img src="./img/arrow-black.svg" alt="arrow"
-                                            class="prod__arrow" /></a>
+                                    <button type="button" class="prod__arrow-black"><img src="./img/arrow-black.svg"
+                                            alt="arrow" class="prod__arrow" /></button>
                                 </div>
                             </div>
                         </li>
@@ -162,8 +139,8 @@
                                 <div class="prod__item-block">
                                     <p class="prod__item-text">Sweet drinks based on milk and ice cream, supplemented
                                         with syrups, fruits, berries and other sweets of your choice</p>
-                                    <a href="#" class="prod__arrow-black"><img src="./img/arrow-black.svg" alt="arrow"
-                                            class="prod__arrow" /></a>
+                                    <button type="button" class="prod__arrow-black"><img src="./img/arrow-black.svg"
+                                            alt="arrow" class="prod__arrow" /></button>
                                 </div>
                             </div>
                         </li>
@@ -323,6 +300,31 @@
                 <p class="footer__bottom">© 2022 - IceCream. All Rights Reserved.</p>
             </div>
         </section>
+    </div>
+    <!-- Меню на планшетном и мобильном разрешении  -->
+    <div class="header__menu-mobile header__menu-mobile_hidden">
+        <img src="./img/logo.svg" class="header__logo header__logo_menu">
+        <button type="button" class="header__menu-btn-close"><img src="./img/close.svg" alt="close"
+                class="header__close" /></button>
+        <div class="header__menu-bar">
+            <nav class="header__menu-wrap">
+                <a href="#main" class="header__menu_item_mob">
+                    Home</a>
+                <a href="#how-it" class="header__menu_item_mob">
+                    How&nbsp;it’s&nbsp;made?
+                </a>
+                <a href="#products" class="header__menu_item_mob">
+                    Our&nbsp;products
+                </a>
+                <a href="#contacts" class="header__menu_item_mob">
+                    Contact
+                </a>
+            </nav>
+            <button type="button" class="header__button button_mobile link_button">
+                <p class="header__button-name">Buy now</p>
+                <span class="header__button-more">></span>
+            </button>
+        </div>
     </div>
 
 </body>

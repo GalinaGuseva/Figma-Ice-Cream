@@ -110,3 +110,8 @@ a {
 .link_button:disabled {
     background: #ABABAB;
 }
+
+.button_mobile {
+    display: flex;
+    margin: 0 auto;
+}
