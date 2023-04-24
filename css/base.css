@@ -1,11 +1,11 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 @import url(./Header.css);
-@import url(./Prod.css);
+@import url(./prod.css);
 @import url(./How.css);
-@import url(./Callback.css);
-@import url(./Contacts.css);
-@import url(./Footer.css);
+@import url(./callback.css);
+@import url(./contacts.css);
+@import url(./footer.css);
 
 .maketforfigma {
     flex: 0 0 auto;
