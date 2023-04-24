@@ -30,59 +30,85 @@
 
     <div class="main">
         <header class="header" id="main">
-            <div class="header__top">
-                <img src="img/logo1.svg" class="header__logo">
-                <div class="header__menu-and-button">
-                    <button type="button" class="header__menu-burger"></button>
-                    <nav class="header__menu">
-                        <a href="#main" class="header__menu_item link">
-                            Home</a>
-                        <a href="#how-it" class="header__menu_item link">
-                            How&nbsp;it’s&nbsp;made?
-                        </a>
-                        <a href="#products" class="header__menu_item link">
-                            Our&nbsp;products
-                        </a>
-                        <a href="#contacts" class="header__menu_item link">
-                            Contact
-                        </a>
-                    </nav>
-                    <button type="button" class="header__button link_button">
-                        <p class="header__button-name">Buy now</p>
-                        <span class="header__button-more">></span>
-                    </button>
+            <div class="header__wrap">
+                <div class="header__top">
+                    <img src="img/logo.svg" class="header__logo">
+                    <div class="header__menu-and-button">
+                        <nav class="header__menu">
+                            <a href="#main" class="header__menu_item link">
+                                Home</a>
+                            <a href="#how-it" class="header__menu_item link">
+                                How&nbsp;it’s&nbsp;made?
+                            </a>
+                            <a href="#products" class="header__menu_item link">
+                                Our&nbsp;products
+                            </a>
+                            <a href="#contacts" class="header__menu_item link">
+                                Contact
+                            </a>
+                        </nav>
+                        <button type="button" class="header__menu-burger"></button>
+                        <div class="header__menu-mobile">
+                            <div class="header__menu-container_visible">
+                                <div class="header__menu-bar">
+                                    <button type="button" class="header__menu-btn-close"></button>
+                                    <nav class="header__menu-wrap">
+                                        <a href="#main" class="header__menu_item link">
+                                            Home</a>
+                                        <a href="#how-it" class="header__menu_item link">
+                                            How&nbsp;it’s&nbsp;made?
+                                        </a>
+                                        <a href="#products" class="header__menu_item link">
+                                            Our&nbsp;products
+                                        </a>
+                                        <a href="#contacts" class="header__menu_item link">
+                                            Contact
+                                        </a>
+                                    </nav>
+                                    <button type="button" class="header__button button_mobile link_button">
+                                        <p class="header__button-name">Buy now</p>
+                                        <span class="header__button-more">></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="header__button link_button">
+                            <p class="header__button-name">Buy now</p>
+                            <span class="header__button-more">></span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="header__background_left"></div>
-            <div class="header__background_middle"></div>
-            <div class="header__background_right"></div>
-            <div class="header__title-and-buttons">
-                <div class="header__title-box">
-                    <h1 class="header__title_top">ice cream made with</h1>
-                    <h1 class="header__title_bottom">passion </h1>
+                <div class="header__background_left"></div>
+                <div class="header__background_middle"></div>
+                <div class="header__background_right"></div>
+                <div class="header__title-and-buttons">
+                    <div class="header__title-box">
+                        <h1 class="header__title_top">ice cream made with</h1>
+                        <h1 class="header__title_bottom">passion </h1>
+                    </div>
+                    <div class="header__buttons">
+                        <button type="button" class="header__btn_left button">Products</button>
+                        <button type="button" class="header__btn_right">How it’s made?</button>
+                    </div>
                 </div>
-                <div class="header__buttons">
-                    <button type="button" class="header__btn_left button">Products</button>
-                    <button type="button" class="header__btn_right">How it’s made?</button>
+                <img src="img/more-icecream.jpg" alt="six ice cream" class="header__img">
+                <div class="header__box">
+                    <div class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et</div>
+                    <a href="#" class="header__arrow"></a>
                 </div>
-            </div>
-            <img src="img/more-icecream.jpg" alt="six ice cream" class="header__img">
-            <div class="header__box">
-                <div class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et</div>
-                <a href="#" class="header__arrow"></a>
-            </div>
-            <div class="header__illustration"></div>
-            <div class="header__illustration_blur"></div>
-            <div class="header__right-block">
-                <div class="header__right-block_top">
-                    <p class="header__number">16</p>
-                    <p class="header__description">cafes</p>
-                </div>
-                <div class="header__right-block_bottom">
+                <div class="header__illustration"></div>
+                <div class="header__illustration_blur"></div>
+                <div class="header__right-block">
+                    <div class="header__right-block_top">
+                        <p class="header__number">16</p>
+                        <p class="header__description">cafes</p>
+                    </div>
                     <div class="header__right-block_bottom">
-                        <p class="header__number">23</p>
-                        <p class="header__description">food&nbsp;truckes</p>
+                        <div class="header__right-block_bottom">
+                            <p class="header__number">23</p>
+                            <p class="header__description">food&nbsp;truckes</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,6 +223,7 @@
         </section>
         <section class="callback">
             <div class="callback__wrap">
+                <div class="callback__background"></div>
                 <div class="callback__center">
                     <img src="img/brooke.jpg" alt="ice-cream-mix" class="callback__image">
                     <img src="img/photo.jpg" alt="girl" class="callback__photo">
@@ -212,86 +239,89 @@
                         <div class="callback__dot"></div>
                     </div>
                 </div>
-                <div class="callback__background"></div>
             </div>
         </section>
         <section class="contacts" id="contacts">
-            <ul class="contacts__places">
-                <li class="contacts__item contacts__item_left">
-                    <div class="contacts__container">
-                        <h5 class="contacts__title">CAFE</h5>
-                        <p class="contacts__city">Chicago</p>
-                        <p class="contacts__address">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
-                        <p class="contacts__days">Monday - Friday</p>
-                        <p class="contacts__hours">06:00 AM - 10:00 PM</p>
-                        <p class="contacts__days">Saturday - Sunday</p>
-                        <p class="contacts__hours contacts__hours_bottom">08:00 AM - 16:00 PM</p>
-                        <p class="contacts__phone">+61(0) 383 766 284 noreply@envato.com</p>
-                    </div>
-                </li>
-                <li class="contacts__item contacts__item_middle">
-                    <div class="contacts__container">
-                        <h5 class="contacts__title">FOOD TRUCK</h5>
-                        <p class="contacts__city">Los Angeles</p>
-                        <p class="contacts__address">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
-                        <p class="contacts__days">Monday - Friday</p>
-                        <p class="contacts__hours">06:00 AM - 10:00 PM</p>
-                        <p class="contacts__days">Saturday - Sunday</p>
-                        <p class="contacts__hours contacts__hours_bottom">08:00 AM - 16:00 PM</p>
-                        <p class="contacts__phone">+61(0) 383 766 284 noreply@envato.com</p>
-                    </div>
-                </li>
-                <li class="contacts__item contacts__item_right">
-                    <div class="contacts__container">
-                        <h5 class="contacts__title">CAFE</h5>
-                        <p class="contacts__city">New York</p>
-                        <p class="contacts__address">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
-                        <p class="contacts__days">Monday - Friday</p>
-                        <p class="contacts__hours">06:00 AM - 10:00 PM</p>
-                        <p class="contacts__days">Saturday - Sunday</p>
-                        <p class="contacts__hours contacts__hours_bottom">08:00 AM - 16:00 PM</p>
-                        <p class="contacts__phone">+61(0) 383 766 284 noreply@envato.com</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="contacts__buttons">
-                <button type="button" class="contacts__left-btn link_button">
-                    <p class="contacts__btn-name">Our Locations</p>
-                    <span class="contacts__btn-more">></span>
-                </button>
-                <button type="button" class="contacts__right-btn button">
-                    <p class="contacts__btn-name">Franchise</p>
-                    <span class="contacts__btn-more">></span>
-                </button>
+            <div class="contacts__wrap">
+                <ul class="contacts__places">
+                    <li class="contacts__item contacts__item_left">
+                        <div class="contacts__container">
+                            <h5 class="contacts__title">CAFE</h5>
+                            <p class="contacts__city">Chicago</p>
+                            <p class="contacts__address">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
+                            <p class="contacts__days">Monday - Friday</p>
+                            <p class="contacts__hours">06:00 AM - 10:00 PM</p>
+                            <p class="contacts__days">Saturday - Sunday</p>
+                            <p class="contacts__hours contacts__hours_bottom">08:00 AM - 16:00 PM</p>
+                            <p class="contacts__phone">+61(0) 383 766 284 noreply@envato.com</p>
+                        </div>
+                    </li>
+                    <li class="contacts__item contacts__item_middle">
+                        <div class="contacts__container">
+                            <h5 class="contacts__title">FOOD TRUCK</h5>
+                            <p class="contacts__city">Los Angeles</p>
+                            <p class="contacts__address">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
+                            <p class="contacts__days">Monday - Friday</p>
+                            <p class="contacts__hours">06:00 AM - 10:00 PM</p>
+                            <p class="contacts__days">Saturday - Sunday</p>
+                            <p class="contacts__hours contacts__hours_bottom">08:00 AM - 16:00 PM</p>
+                            <p class="contacts__phone">+61(0) 383 766 284 noreply@envato.com</p>
+                        </div>
+                    </li>
+                    <li class="contacts__item contacts__item_right">
+                        <div class="contacts__container">
+                            <h5 class="contacts__title">CAFE</h5>
+                            <p class="contacts__city">New York</p>
+                            <p class="contacts__address">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
+                            <p class="contacts__days">Monday - Friday</p>
+                            <p class="contacts__hours">06:00 AM - 10:00 PM</p>
+                            <p class="contacts__days">Saturday - Sunday</p>
+                            <p class="contacts__hours contacts__hours_bottom">08:00 AM - 16:00 PM</p>
+                            <p class="contacts__phone">+61(0) 383 766 284 noreply@envato.com</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="contacts__buttons">
+                    <button type="button" class="contacts__left-btn link_button">
+                        <p class="contacts__btn-name">Our Locations</p>
+                        <span class="contacts__btn-more">></span>
+                    </button>
+                    <button type="button" class="contacts__right-btn button">
+                        <p class="contacts__btn-name">Franchise</p>
+                        <span class="contacts__btn-more">></span>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="footer">
-            <div class="footer__wrap">
-                <div class="footer__textblock">
-                    <p class="footer__text-top">homemade ice cream made</p>
-                    <p class="footer__text"> with passion</p>
+            <div class="footer__container">
+                <div class="footer__wrap">
+                    <div class="footer__textblock">
+                        <p class="footer__text-top">homemade ice cream made</p>
+                        <p class="footer__text"> with passion</p>
+                    </div>
+                    <div class="footer__block">
+                        <ul class="footer__social">
+                            <li class="footer__item">
+                                <a href="#" target="_blank" class="footer__link"></a>
+                                <img src="img/github.svg" alt="github" class="footer__social-icon" /></a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" target="_blank" class="footer__link"></a>
+                                <img src="img/telegram.svg" alt="telegram" class="footer__social-icon" /></a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" target="_blank" class="footer__link"></a>
+                                <img src="img/facebook.svg" alt="facebook" class="footer__social-icon" /></a>
+                            </li>
+                        </ul>
+                        <p class="footer__phone">Feel free to contact <span class="footer__number">+61 (0) 383 766
+                                284</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="footer__block">
-                    <ul class="footer__social">
-                        <li class="footer__item">
-                            <a href="#" target="_blank" class="footer__link"></a>
-                            <img src="img/github.svg" alt="github" class="footer__social-icon" /></a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" target="_blank" class="footer__link"></a>
-                            <img src="img/telegram.svg" alt="telegram" class="footer__social-icon" /></a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" target="_blank" class="footer__link"></a>
-                            <img src="img/facebook.svg" alt="facebook" class="footer__social-icon" /></a>
-                        </li>
-                    </ul>
-                    <p class="footer__phone">Feel free to contact <span class="footer__number">+61 (0) 383 766
-                            284</span>
-                    </p>
-                </div>
+                <p class="footer__bottom">© 2022 - IceCream. All Rights Reserved.</p>
             </div>
-            <p class="footer__bottom">© 2022 - IceCream. All Rights Reserved.</p>
         </section>
     </div>
 

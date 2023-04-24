@@ -1,17 +1,18 @@
 .how {
     color: #FCFCFC;
-    min-height: 1050px;
-    margin: 0;
+    display: flex;
+    width: 100%;
+    background: #84A278;
 }
 
 .how__center {
-    max-width: 1200px;
+    width: 1168px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 16px 0;
+    padding-top: 60px;
 }
 
 .how__header {
@@ -196,13 +197,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .how {
-        min-height: 1075px;
-    }
-
     .how__center {
-        max-width: 768px;
-        padding: 60px 32px 0;
+        width: 704px;
     }
 
     .how__header {
@@ -273,14 +269,8 @@
 }
 
 @media screen and (max-width: 767px) {
-    .how {
-        min-height: 1564px;
-    }
-
     .how__center {
-        max-width: 320px;
-        padding: 60px 20px 0;
-        height: 100%;
+        width: 280px;
     }
 
     .how__header {

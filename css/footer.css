@@ -1,10 +1,16 @@
 .footer {
+    display: flex;
+    width: 100%;
+    background: #84A278;
     color: #FCFCFC;
-    max-width: 1168px;
-    padding: 0 16px;
+}
+
+.footer__container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 1168px;
+    padding: 0 16px;
     margin: 0 auto 11px;
 }
 
@@ -105,10 +111,10 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .footer {
+    .footer__container {
         max-width: 768px;
+        padding: 0 16px;
         margin: 0 auto 13px;
-        padding: 0 33px;
     }
 
     .footer__wrap {
@@ -155,7 +161,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .footer {
+    .footer__container {
         max-width: 320px;
         margin: 0 auto 62px;
         padding: 0 20px;

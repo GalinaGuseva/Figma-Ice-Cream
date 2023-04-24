@@ -1,12 +1,17 @@
 .contacts {
-    width: 1168px;
+    display: flex;
+    width: 100%;
+    background: #84A278;
+}
+
+.contacts__wrap {
+    width: 1200px;
+    padding: 0 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto 120px;
-    padding: 0;
-    border-radius: 24px;
 }
 
 .contacts__places {
@@ -158,15 +163,15 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .contacts {
-        max-width: 704px;
+    .contacts__wrap {
+        width: 768px;
+        padding: 0 32px;
         margin: 0 auto 40px;
-        height: 327px;
     }
 
     .contacts__places {
         width: 704px;
-        height: 528px;
+        height: 250px;
         margin-bottom: 60px;
     }
 
@@ -201,12 +206,13 @@
 }
 
 @media screen and (max-width: 767px) {
-    .contacts {
-        max-width: 280px;
+    .contacts__wrap {
+        width: 320px;
         justify-content: start;
         align-items: center;
+        padding: 0 20px;
+        min-height: 1060px;
         margin: 0 auto 39px;
-        height: 1060px;
     }
 
     .contacts__places {
