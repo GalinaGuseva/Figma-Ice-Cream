@@ -255,10 +255,10 @@
     }
 
     .contacts__title {
-        height: 16px;
+        height: 18px;
         margin: 0 auto 20px 0;
         border-radius: 4px;
-        padding: 0 20px;
+        padding: 0 25px;
     }
 
     .contacts__address {

@@ -69,13 +69,60 @@
 }
 
 .footer__link {
-    border: none;
-}
-
-.footer__social-icon {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
     width: 34px;
     height: 34px;
-    padding: 0;
+    border-radius: 50%;
+    object-fit: contain;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.footer__link_facebook {
+    background: url(../img/facebook.svg);
+}
+
+.footer__link_github {
+    background: url(../img/github.svg);
+}
+
+.footer__link_telegram {
+    background-image: url(../img/telegram.svg);
+}
+
+.footer__link_telegram:hover {
+    background: url(../img/telegram-white.svg);
+}
+
+.footer__link_telegram:focus {
+    background: url(../img/telegram-white.svg);
+    transform: scale(1.03, 1.03);
+}
+
+.footer__link_github:hover {
+    background: url(../img/github-white.svg);
+    border: 2px solid #F8D24E;
+}
+
+.footer__link_gihub:focus {
+    background: url(../img/github-white.svg);
+    border: 2px solid #F8D24E;
+    transform: scale(1.03, 1.03);
+}
+
+.footer__link_facebook:hover {
+    background: url(../img/facebook-white.svg);
+    border: 2px solid #F8D24E;
+}
+
+.footer__link_facebook:focus {
+    background: url(../img/facebook-white.svg);
+    border: 2px solid #F8D24E;
+    transform: scale(1.03, 1.03);
 }
 
 .footer__phone {
