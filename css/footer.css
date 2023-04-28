@@ -78,7 +78,7 @@
     height: 34px;
     border-radius: 50%;
     object-fit: contain;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
     cursor: pointer;
 }
 

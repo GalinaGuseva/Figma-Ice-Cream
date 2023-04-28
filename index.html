@@ -345,7 +345,7 @@
             </div>
         </section>
     </div>
-    <!-- Меню на планшетном и мобильном разрешении  -->
+    <!-- Модальное окно меню хедера на планшетном и мобильном разрешении  -->
     <div class="header__menu-mobile header__menu-mobile_hidden">
         <img src="./img/logo.svg" class="header__logo header__logo_menu">
         <button type="button" class="header__menu-btn-close"><img src="./img/close.svg" alt="close"
@@ -368,6 +368,144 @@
                 <p class="header__button-name">Buy now</p>
                 <span class="header__button-more">></span>
             </button>
+        </div>
+    </div>
+    <!-- Модальное окно к кнопке Buy now  -->
+    <div class="modal-buy-now">
+        <div class="buy__modal">
+            <div class="buy__container">
+                <button type="button" class="buy__btn-close"></button>
+                <h4 class="buy__head">Buy now</h4>
+                <form name="buy-now-choice" class="buy__form">
+                    <fieldset class="buy__choices">
+                        <input type="radio" id="ice" class="buy__choice" name="choice" value="icecream">
+                        <label for="ice" class="buy__ice">
+                            <img src="./img/kelsey-curtis.jpg" alt="ice cream" class="buy__image">
+                            <div class="buy__choice-circle buy__circle_ice"></div>
+                            <p class="buy__description">ice cream</p>
+                        </label>
+                        <input type="radio" id="coffee" class="buy__choice" name="choice" value="icecoffee">
+                        <label for="coffee" class="buy__coffee">
+                            <img src="./img/pariwat.jpg" alt="ice coffee" class="buy__image">
+                            <div class="buy__choice-circle buy__circle_coffee"></div>
+                            <p class="buy__description">ice coffee</p>
+                        </label>
+                        <input type="radio" id="shake" name="choice" value="milkshake" class="buy__choice">
+                        <label for="shake" class="buy__shake">
+                            <img src="./img/victor.jpg" alt="milkshake" class="buy__image">
+                            <div class="buy__choice-circle buy__circle_shake"></div>
+                            <p class="buy__description">milkshake</p>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="buy__form-set">
+                        <div class="buy__field">
+                            <label for="buy-name" class="buy__text">Name</label>
+                            <input id="buy-name" name="name" type="text" class="buy__input" />
+                        </div>
+                        <div class="buy__field">
+                            <label for="buy-phone" class="buy__text">Phone</label>
+                            <input id="buy-phone" name="phone" type="text" class="buy__input" />
+                        </div>
+                        <div class="buy__field buy__field_comment">
+                            <label for="buy-comment" class="buy__text">Comment</label>
+                            <input id="buy-comment" name="comment" type="text" class="buy__input" />
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="buy__button link_button">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Модальное окно к стрелкам с ингредиентами  -->
+    <div class="modal-ingredients">
+        <div class="buy__modal buy__modal_ingredients">
+            <div class="buy__container">
+                <button type="button" class="buy__btn-close"></button>
+                <h4 class="buy__head">Chololate icecream</h4>
+                <div class="buy__box">
+                    <img src="./img/chocolate-ice-cream.svg" alt="chocolate-ice-cream" class="buy__photo">
+                    <div class="buy__img"></div>
+                </div>
+                <ul class="buy__items">
+                    <li class="buy__item">
+                        <div class="buy_circle">320</div>
+                        <p class="buy__name">kcal</p>
+                    </li>
+                    <li class="buy__item">
+                        <div class="buy_circle">4g</div>
+                        <p class="buy__name">Protein</p>
+                    </li>
+                    <li class="buy__item">
+                        <div class="buy_circle">8,2g</div>
+                        <p class="buy__name">Fats</p>
+                    </li>
+                    <li class="buy__item">
+                        <div class="buy_circle">40,4g</div>
+                        <p class="buy__name">Carbs</p>
+                    </li>
+                </ul>
+                <div class="buy__title">Ingredients</div>
+                <ul class="buy__list">
+                    <li class="buy__element">
+                        <p class="buy__ingredients">Milk</p>
+                        <span class="buy__weight">100ml</span>
+                    </li>
+                    <li class="buy__element">
+                        <p class="buy__ingredients">Belgian chocolate</p>
+                        <span class="buy__weight">20g</span>
+                    </li>
+                    <li class="buy__element">
+                        <p class="buy__ingredients">Cream</p>
+                        <span class="buy__weight">150ml</span>
+                    </li>
+                    <li class="buy__element">
+                        <p class="buy__ingredients">Cocoa powder</p>
+                        <span class="buy__weight">30g</span>
+                    </li>
+                    <li class="buy__element">
+                        <p class="buy__ingredients">Sugar</p>
+                        <span class="buy__weight">40g</span>
+                    </li>
+                    <li class="buy__element">
+                        <p class="buy__ingredients">Vanilla sugar</p>
+                        <span class="buy__weight">10g</span>
+                    </li>
+                </ul>
+                <form name="buy-now" class="buy__form_ingredient">
+                    <section class="buy__form-set">
+                        <div class="buy__field">
+                            <label class="buy__text">Name</label>
+                            <input id="buy-name" name="name" type="text" class="buy__input" />
+                        </div>
+                        <div class="buy__field">
+                            <label class="buy__text">Phone</label>
+                            <input id="buy-phone" name="phone" type="text" class="buy__input" />
+                        </div>
+                        <div class="buy__field buy__field_comment">
+                            <label class="buy__text">Comment</label>
+                            <input id="buy-comment" name="comment" type="text" class="buy__input" />
+                        </div>
+                    </section>
+                    <button type="submit" class="buy__button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Модальное окно к кнопке REad more  -->
+    <div class="read-more-modal">
+        <div class="read">
+            <div class="read__container">
+                <h3 class="read__title">How it’s made?</h3>
+                <div class="read__movie">
+                    <div class="read__play"></div>
+                </div>
+                <p class="read__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et</p>
+
+            </div>
         </div>
     </div>
 
