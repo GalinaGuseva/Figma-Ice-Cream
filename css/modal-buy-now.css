@@ -1,30 +1,26 @@
 .modal-buy-now {
-    position: relative;
-    display: flex;
-    opacity: 1;
-    visibility: visible;
-    top: 0;
-    right: 0;
+    display: none;
     width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
     background: rgba(0, 0, 0, 0.6);
     z-index: 10;
 }
 
 .modal-ingredients {
-    position: fixed;
     display: none;
+    visibility: visible;
     opacity: 1;
-    top: 0;
-    right: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
 }
 
 .buy__modal {
     display: flex;
     width: 568px;
-    height: 644px;
     margin: 10px auto;
     border: 2px solid #F8D24E;
     background-color: #FCFCFC;
@@ -36,10 +32,6 @@
     position: relative;
     padding: 0;
     z-index: 100;
-}
-
-.buy__modal_ingredients {
-    height: 995px;
 }
 
 .buy__btn-close {
@@ -63,7 +55,7 @@
     width: 568px;
     flex-direction: column;
     align-items: center;
-    margin: 1px auto;
+    margin: 0 auto;
     padding: 32px 40px;
     z-index: 50;
 }
@@ -99,7 +91,7 @@
     padding: 0;
 }
 
-.buy__choice {
+.buy__choice_ice {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -112,26 +104,72 @@
     transition: 0.2s all linear;
     outline: none;
     overflow: hidden;
-    position: relative;
-}
-
-.buy__choice:checked {
-    border: none;
+    position: absolute;
+    top: 163px;
+    left: 54px;
     border-radius: 16px;
-    left: 2px;
-    background: #EFD478;
+    border: 2px solid #96AF8C;
+    background-color: #FCFCFC;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }
 
-.buy__choice:checked+#ice {
+.buy__choice_coffee {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 132px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    top: 164px;
+    left: 218px;
+    border-radius: 16px;
+    border: 2px solid #EFD478;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    background-color: #FCFCFC;
+}
+
+.buy__choice_shake {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 132px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    top: 163px;
+    right: 51px;
+    border-radius: 16px;
+    border: 2px solid #D6936D;
+    background-color: #FCFCFC;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+
+.buy__choice_ice:checked {
     background: #96AF8C;
+    border: none;
 }
 
-.buy__choice:checked+#coffee {
+.buy__choice_coffee:checked {
     background: #EFD478;
+    border: none;
 }
 
-.buy__choice:checked+#shake {
+.buy__choice_shake:checked {
     background: #D6936D;
+    border: none;
 }
 
 .buy__ice {
@@ -141,8 +179,6 @@
     width: 132px;
     height: 135px;
     border-radius: 16px;
-    border: 2px solid #96AF8C;
-    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 }
 
 .buy__coffee {
@@ -152,8 +188,6 @@
     width: 132px;
     height: 135px;
     border-radius: 16px;
-    border: 2px solid #EFD478;
-    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }
 
 .buy__shake {
@@ -163,24 +197,6 @@
     width: 132px;
     height: 135px;
     border-radius: 16px;
-    border: 2px solid #D6936D;
-    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-}
-
-
-.buy__choice_icecream {
-    background: #AEC6A5;
-    border: none;
-}
-
-.buy__choice_coffee {
-    background: #EFD478;
-    border: none;
-}
-
-.buy__choice_shake {
-    background: #D6936D;
-    border: none;
 }
 
 .buy__image {
@@ -290,7 +306,6 @@
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -370,12 +385,12 @@
 }
 
 .buy__form-set {
-    width: 368px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 200px;
     margin: 0 auto;
     border: none;
+    padding: 0;
 }
 
 .buy__field {
@@ -411,6 +426,7 @@
     color: inherit;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .buy__button {
@@ -427,6 +443,7 @@
     line-height: 17px;
     align-items: center;
     text-align: center;
+    justify-content: center;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -434,11 +451,6 @@
 @media screen and (max-width: 767px) {
     .buy__modal {
         width: 280px;
-        height: 986px;
-    }
-
-    .buy__modal_ingredients {
-        height: 990px;
     }
 
     .buy__btn-close {
@@ -451,14 +463,14 @@
     .buy__container {
         width: 224px;
         padding: 28px;
+        margin: 0;
     }
 
     .buy__head {
         font-size: 16px;
         line-height: 24px;
-        width: 222px;
+        width: 142px;
     }
-
 
     .buy__form {
         max-width: 224px;
@@ -477,6 +489,22 @@
         margin: 20px auto 24px;
     }
 
+    .buy__choice_ice {
+        top: 136.4px;
+        left: 74px;
+    }
+
+    .buy__choice_coffee {
+        top: 356.7px;
+        left: 74px;
+    }
+
+    .buy__choice_shake {
+        top: 577px;
+        right: 74px;
+        left: 74px;
+    }
+
     .buy__ice {
         top: 136.4px;
         left: 74px;
@@ -493,6 +521,18 @@
         left: 74px;
     }
 
+    .buy__form_ingredient {
+        width: 224px;
+    }
+
+    .buy__field_comment {
+        margin-bottom: 24px;
+    }
+
+    .buy__button {
+        width: 132px;
+    }
+
     .buy__box {
         width: 132px;
         height: 138px;
@@ -501,59 +541,54 @@
 
     .buy__img {
         width: 132px;
-        height: 130px;
+        height: 130.6px;
         top: 7px;
     }
 
     .buy__photo {
-        width: 130.4px;
+        width: 130.43px;
         height: 131px;
-        object-fit: contain;
-        margin: 0;
     }
 
     .buy__items {
-        width: 240px;
+        width: 224px;
         height: 72px;
-        gap: 9px;
-        margin: 0 auto 39px;
+        gap: 7px;
+        margin: 0 0 24px;
+        padding: 0;
     }
 
     .buy__item {
-        width: 53px;
-        height: 72px;
+        width: 47px;
+        height: 70px;
+        padding: 0;
+        margin: 0;
     }
 
     .buy_circle {
         width: 43px;
         height: 43px;
-        background: #9CBE8F;
+        font-weight: 500;
         font-size: 10px;
-        padding: 3px 8px;
+        line-height: 28px;
+        padding: 0;
+        margin: 0;
     }
 
-    .buy__name {
-        margin: 8px auto;
-        font-size: 10px;
-        line-height: 12px;
+    .buy__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .buy__list {
-        width: 240px;
-        height: 205px;
+        padding: 0;
+        width: 224px;
     }
 
-    .buy__form_ingredient {
-        width: 240px;
-    }
-
-    .buy__form-set {
-        width: 240px;
-        min-height: 224px;
-    }
-
-    .buy__button {
-        width: 132px;
-
+    .buy__name {
+        margin: 5px auto 3px;
+        font-size: 10px;
+        line-height: 12px;
     }
 }
