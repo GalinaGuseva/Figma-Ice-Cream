@@ -5,53 +5,28 @@
 }
 
 .contacts__wrap {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto 120px;
 }
 
 .contacts__places {
     list-style: none;
-    width: 1168px;
-    height: 538px;
-    display: block;
-    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     border-radius: 24px;
-    position: relative;
-    margin: 0 auto;
+    margin: -96px 0 0 0;
     padding: 0;
 }
 
 .contacts__item {
-    position: absolute;
-    top: -96px;
-    width: 368px;
-    display: block;
+    max-width: 368px;
+    flex: 1;
     box-sizing: border-box;
     border-radius: 24px;
-    padding: 0;
-    margin: 0;
-}
-
-.contacts__item_left {
-    left: 0;
-}
-
-.contacts__item_middle {
-    left: 400px;
-}
-
-.contacts__item_right {
-    right: 0;
-}
-
-.contacts__container {
-    width: 368px;
-    box-sizing: border-box;
     background: #FFFFFF;
     padding: 40px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -62,16 +37,23 @@
     font-size: 16px;
     line-height: 186%;
     letter-spacing: 0.04em;
+    margin-right: 32px;
+    z-index: 30;
+}
+
+.contacts__item:last-of-type {
+    margin-right: 0;
 }
 
 .contacts__title {
-    box-sizing: border-box;
+    box-sizing: content-box;
+    align-self: flex-start;
     height: 28px;
-    margin: 0 auto 32px 0;
+    margin-bottom: 32px;
     background: #F8D24E;
     border-radius: 6px;
     border: none;
-    padding: 0 16px 3px;
+    padding: 0 16px;
 }
 
 .contacts__city {
@@ -94,7 +76,7 @@
 .contacts__hours {
     color: #ABABAB;
     padding: 0;
-    margin: 0 0 12px;
+    margin: 0;
 }
 
 .contacts__hours_bottom {
@@ -164,31 +146,31 @@
 
 @media screen and (max-width: 1024px) {
     .contacts__wrap {
-        width: 768px;
+        max-width: 768px;
         padding: 0 32px;
         margin: 0 auto 40px;
     }
 
     .contacts__places {
-        width: 704px;
-        height: 250px;
-        margin-bottom: 60px;
+        margin: -304px auto 60px;
     }
 
     .contacts__item {
         width: 224px;
-        top: -303px;
-    }
-
-    .contacts__item_middle {
-        width: 224px;
-        left: 239px;
-    }
-
-    .contacts__container {
-        width: 224px;
+        margin-right: 16px;
         font-size: 14px;
         padding: 40px 24px;
+    }
+
+    .contacts__title {
+        box-sizing: content-box;
+        align-self: flex-start;
+        height: 28px;
+        margin: 0 0 32px;
+        background: #F8D24E;
+        border-radius: 6px;
+        border: none;
+        padding: 0 10px;
     }
 
     .contacts__city {
@@ -207,7 +189,7 @@
 
 @media screen and (max-width: 767px) {
     .contacts__wrap {
-        width: 320px;
+        max-width: 320px;
         justify-content: start;
         align-items: center;
         padding: 0 20px;
@@ -218,40 +200,16 @@
     .contacts__places {
         display: flex;
         flex-direction: column;
-        list-style: none;
         width: 280px;
-        min-height: 930px;
-        margin-bottom: 32px;
+        margin: -324px auto 12px;
     }
 
     .contacts__item {
-        position: absolute;
-        top: -346px;
-        width: 280px;
-    }
-
-    .contacts__item_left {
-        width: 280px;
-        top: -346px;
-    }
-
-    .contacts__item_middle {
-        width: 280px;
-        top: 86px;
-        left: 0;
-    }
-
-    .contacts__item_right {
-        width: 280px;
-        top: 518px;
-    }
-
-    .contacts__container {
-        width: 280px;
-        height: 412px;
+        width: 100%;
         padding: 40px 32px;
         font-size: 12px;
         line-height: 22px;
+        margin: 0 0 20px;
     }
 
     .contacts__title {

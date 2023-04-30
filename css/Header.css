@@ -413,6 +413,14 @@
     z-index: 10;
 }
 
+@media screen and (max-width: 1190px) {
+
+    .header__background_middle {
+        left: 230px;
+        width: 493px;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .header__wrap {
         width: 704px;
