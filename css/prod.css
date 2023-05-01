@@ -7,7 +7,8 @@
 
 .prod__wrap {
     display: flex;
-    width: 1200px;
+    max-width: 1180px;
+    flex: 1;
     position: relative;
     margin: 0 auto;
     padding: 0;
@@ -228,7 +229,7 @@
 @media screen and (max-width: 1023px) {
     .prod__wrap {
         min-height: 852px;
-        width: 768px;
+        max-width: 760px;
     }
 
     .prod__center {
@@ -325,7 +326,7 @@
 @media screen and (max-width: 767px) {
     .prod__wrap {
         min-height: 1924px;
-        width: 320px;
+        max-width: 320px;
     }
 
     .prod__center {

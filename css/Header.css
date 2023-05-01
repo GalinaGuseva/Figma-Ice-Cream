@@ -7,9 +7,10 @@
 .header__wrap {
     display: flex;
     position: relative;
-    width: 1168px;
+    max-width: 1190px;
+    flex: 1;
     min-height: 664px;
-    padding: 0;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
@@ -19,8 +20,8 @@
     align-items: center;
     position: absolute;
     top: 8px;
-    left: 0px;
-    right: 0px;
+    left: 16px;
+    right: 16px;
     height: 65px;
 }
 
@@ -122,7 +123,7 @@
     background-image: url(../img/dots-left.svg);
     margin: 0;
     background-size: 100%;
-    left: -15px;
+    left: 0;
     bottom: 17px;
     object-fit: contain;
     background-position: center;
@@ -132,7 +133,7 @@
 .header__background_right {
     position: absolute;
     bottom: 0;
-    right: -16px;
+    right: 0;
     height: 109px;
     width: 285px;
     background-image: url(../img/dots-right.svg);
@@ -159,7 +160,7 @@
 
 .header__title-and-buttons {
     position: absolute;
-    left: 0;
+    left: 16px;
     top: 118px;
     width: 367px;
     margin: 0;
@@ -253,7 +254,7 @@
 .header__img {
     height: 225px;
     width: 225px;
-    left: 0;
+    left: 16px;
     bottom: 64.5px;
     margin-top: 42px;
     position: absolute;
@@ -271,7 +272,7 @@
     height: 112px;
     position: absolute;
     bottom: 111px;
-    left: 240px;
+    left: 256px;
 }
 
 .header__text {
@@ -365,7 +366,7 @@
     width: 79px;
     height: 170px;
     position: absolute;
-    right: 0;
+    right: 16px;
     top: 118px;
     display: flex;
     flex-direction: column;
@@ -423,7 +424,7 @@
 
 @media screen and (max-width: 1023px) {
     .header__wrap {
-        width: 704px;
+        max-width: 704px;
         min-height: 415px;
     }
 
@@ -540,14 +541,14 @@
     .header__background_left {
         height: 32px;
         width: 107px;
-        left: -32px;
+        left: -16px;
         bottom: 3px;
     }
 
     .header__background_right {
         height: 67px;
         width: 183px;
-        right: -32px;
+        right: 0;
         bottom: 2px;
     }
 
@@ -598,7 +599,7 @@
     .header__img {
         height: 152px;
         width: 152px;
-        left: 0;
+        left: 16px;
         bottom: 13px;
         margin-top: 28px;
     }
@@ -607,7 +608,7 @@
         width: 151px;
         height: 121px;
         bottom: 32px;
-        left: 185px;
+        left: 201px;
     }
 
     .header__text {
@@ -620,14 +621,14 @@
     .header__illustration {
         width: 266px;
         height: 342px;
-        right: 56px;
+        right: 72px;
         margin-bottom: -14px;
     }
 
     .header__illustration_blur {
         width: 286px;
         height: 362px;
-        right: 50px;
+        right: 66px;
         object-fit: fill;
         margin-bottom: -14px;
     }
@@ -663,7 +664,7 @@
 
 @media screen and (max-width: 767px) {
     .header__wrap {
-        width: 280px;
+        max-width: 280px;
         min-height: 490px;
     }
 
@@ -749,7 +750,7 @@
         background-image: url(../img/dots-left-mob.svg);
         height: 33px;
         width: 106px;
-        left: -20px;
+        left: 0;
         bottom: 0;
     }
 
@@ -757,13 +758,14 @@
         background-image: url(../img/dots-right-mob.svg);
         height: 49px;
         width: 130px;
-        right: -20px;
+        right: 0;
         bottom: 0;
     }
 
     .header__title-and-buttons {
         top: 110px;
         width: 247px;
+        left: 20px;
     }
 
     .header__title_top {
@@ -791,14 +793,14 @@
     .header__illustration {
         width: 170px;
         height: 219px;
-        left: 65px;
+        left: 85px;
         margin-bottom: -10px;
     }
 
     .header__illustration_blur {
         width: 180px;
         height: 229px;
-        left: 55px;
+        left: 75px;
         margin-bottom: -10px;
     }
 

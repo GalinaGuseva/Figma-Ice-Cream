@@ -6,7 +6,8 @@
 }
 
 .how__center {
-    width: 1200px;
+    max-width: 1200px;
+    flex: 1;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -199,7 +200,7 @@
 
 @media screen and (max-width: 1024px) {
     .how__center {
-        width: 704px;
+        max-width: 704px;
     }
 
     .how__header {
@@ -271,7 +272,7 @@
 
 @media screen and (max-width: 767px) {
     .how__center {
-        width: 280px;
+        max-width: 280px;
     }
 
     .how__header {
